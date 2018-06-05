@@ -1,0 +1,33 @@
+
+<nav>
+  <a routerLink="/home">Home</a>
+</nav>
+
+<div style="text-align: center">
+  <h4>Entire dataset:</h4>
+
+  <div style="text-align: center">
+    <table class="table table-striped" >
+      <thead>
+        <tr>
+          <th>IdNum</th>
+          <th>Course</th>
+          <th>PartNumber</th>
+          <th>PartTitle</th>
+          <th>ModuleNumber</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let module of modules">
+          <td>{{module.idNum}}</td>
+          <td>{{module.course}}</td>
+          <td>{{module.partNum}}</td>
+          <td>{{module.partTitle}}</td>
+          <td>{{module.moduleNum}}</td>
+          <td>{{module.description}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

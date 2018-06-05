@@ -1,0 +1,18 @@
+
+<div style="text-align: center">
+
+  <nav>
+    <a routerLink="/all">All data</a>
+  </nav>
+  <br/> <br/>
+
+  
+  <h4>Search course catalog:</h4>
+
+  <form>
+    <input type="text" name="searchBar" id="searchBar" placeholder="type here"[(ngModel)]="searchBar1">
+    <input type="submit" value="Submit" (click)="onClick($event)">
+  </form>
+</div>
+
+<div style="text-align:center">{{testMessage}}</div>
